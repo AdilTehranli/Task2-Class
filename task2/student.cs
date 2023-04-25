@@ -1,14 +1,20 @@
 ﻿
 namespace task1;
 
+
 internal class student
 {
     //fields
-    public string name;
-    public string surname;
-    public double point;
-    public string group;
-    public bool isgraduated;
+    public string name { get; set; }  
+    public string surname { get; set; }
+    public double point { get; set; }
+    public string group { get; set; }
+    public bool isgraduated { get; set; }
+
+    //constructor-ilk ishe dusen kod blokudur,
+    //c# class aid ile eyni adda olur,
+    //yalniz instance alanda ise dusur,
+    //return type yoxdur
     public student(string Name, string Surname, string Group, double Point, bool Isgraduated)
     {
         name = Name;
@@ -55,8 +61,4 @@ internal class student
             return false;
         }
     }
-
-
-
-
 }
